@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FindIt - Register</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-magnifying-glass-location"></i> FindIt
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="founditem.html">Found Items</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+</nav>
+
+<div class="register-container">
+
+    <!-- LEFT SIDE (IMAGE / BRAND) -->
+    <div class="left-side">
+        <h1>Join FindIt</h1>
+        <p>Create your account and start reporting lost items easily.</p>
+
+        <a href="login.html">
+            <button class="secondary-btn">Already have account? Login</button>
+        </a>
+    </div>
+
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="right-side">
+
+        <div class="form-box">
+            <h2>Create Account</h2>
+
+            <input type="text" id="username" placeholder="Username">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="password" id="password" placeholder="Password">
+
+            <button class="primary-btn" onclick="register()">Register</button>
+
+            <p id="errorMsg" class="error"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

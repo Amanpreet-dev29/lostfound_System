@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FindIt - Smart Lost & Found</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-magnifying-glass-location"></i> FindIt
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="founditem.html">Found Items</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+
+    <div class="hero-content">
+        <h1>Lost something? <br>Let's help you <span>find it.</span></h1>
+        <p>Report, search, and claim your lost items easily.</p>
+
+        <!-- POST ITEM FORM -->
+        <div class="post-form">
+            <input id="title" placeholder="Item name" class="input">
+            <textarea id="description" placeholder="Description" class="input"></textarea>
+            <input id="category" placeholder="Category (Electronics, Documents...)" class="input">
+            <input id="contact" placeholder="Contact number" class="input">
+
+            <button class="btn" onclick="addItem()">
+                <i class="fa-solid fa-plus"></i> Post Item
+            </button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1581447109200-bf2769116351"
+             alt="Lost and Found"
+             style="border-radius:50%; width:350px; height:350px; object-fit:cover;">
+    </div>
+
+</header>
+
+<!-- SEARCH SECTION -->
+<div class="search-container">
+
+    <input type="text" id="searchInput" placeholder="Search items...">
+
+    <select id="categorySelect">
+        <option value="">All Categories</option>
+        <option>Electronics</option>
+        <option>Documents</option>
+        <option>Personal</option>
+    </select>
+
+    <button class="btn" onclick="searchItems()">
+        <i class="fa-solid fa-search"></i> Search
+    </button>
+
+</div>
+
+<!-- ITEMS SECTION -->
+<section id="recent-items">
+
+    <h2>Recently Listed Items</h2>
+
+    <div class="items-grid" id="itemsGrid">
+        <!-- Items will load here -->
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="text-align:center; padding:20px; color:#666;">
+    ©️ 2026 FindIt - Lost & Found Project
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", loadItems);
+</script>
+
+</body>
+</html>
