@@ -9,7 +9,7 @@ FindIt is a full-stack Lost &amp; Found web application that allows users to rep
 	•	👤 User registration and login system
 	•	📊 Real-time data interaction with database
 
-⸻
+
 
 🛠️ Tech Stack
 
@@ -25,7 +25,7 @@ Backend
 Database
 	•	MySQL
 
-⸻
+
 
 ⚙️ How It Works
 	1.	User interacts with the frontend (forms, search, etc.)
